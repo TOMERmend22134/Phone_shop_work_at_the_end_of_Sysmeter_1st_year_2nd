@@ -1,0 +1,225 @@
+/* General styles */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    min-height: 100vh;
+}
+
+.header {
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-holder {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="city"],
+input[type="street"],
+input[type="numberOfHome"],
+input[type="number"],
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+label {
+    margin-bottom: 5px;
+    color: black;
+    position: absolute;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4472CA;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #315C91;
+}
+
+button:disabled {
+    background-color: #dddddd;
+    cursor: not-allowed;
+}
+
+/* Responsive styles */
+
+@media (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .input-holder {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        justify-content: flex-start;
+    }
+
+    .input-holder {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .input-holder {
+        width: 25%;
+    }
+}
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    background: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.1);
+}
+
+form h2 {
+    align-self: center;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+form button[type=submit] {
+    align-self: center;
+    width: 100%;
+    max-width: 120px;
+    margin-top: 1rem;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.client-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.client-list h2 {
+    align-self: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.client-list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #F7F9FB;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-name,
+.client-email {
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.client-delete-btn,
+.client-edit-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.client-delete-btn {
+    background-color: #FF6157;
+    color: #fff;
+}
+
+.client-edit-btn {
+    background-color: #00A16A;
+    color: #fff;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.disappear {
+    display: none;
+}
+
+/* .client-delete-btn,
+.clienteditbtn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: 10px;  /* Add margin around the buttons */

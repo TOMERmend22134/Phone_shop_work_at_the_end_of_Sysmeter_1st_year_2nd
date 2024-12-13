@@ -1,0 +1,51 @@
+#koteretfix {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+li button{
+    margin: 5px;
+}
+
+#special_gap {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+#movebuttons {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    margin-bottom: 10px;
+}
+
+#movebuttons>button {
+    margin-left: 10px;
+}
+
+#footerfix {
+    background-color: orange;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    #movebuttons {
+      top: 135px; /* adjust as needed */
+      right: 10px; /* adjust as needed */
+      display: grid; 
+    }
+  
+    #movebuttons>button {
+        margin-bottom: 10px;
+      margin-left: 5px; /* adjust as needed */
+      /* Add your styles below */
+      padding: 5px 10px; /* adjust as needed */
+      font-size: 0.8em; /* adjust as needed */
+    }
+  }

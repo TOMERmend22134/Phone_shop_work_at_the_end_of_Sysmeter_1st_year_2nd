@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+}
+
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "CoolFont";
+    src: url(./assets//fonts/TT-Fors-Trial-Regular.ttf) format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "CoolFont";
+    font-size: 20px;
+}
+
+
+img {
+    max-width: 100%;
+}

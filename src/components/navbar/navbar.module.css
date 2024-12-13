@@ -1,0 +1,142 @@
+.nav {
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    position: relative;
+    background-color: orange;
+}
+
+/* .nav>a>img {
+    width: 18%;
+    max-width: 100%;
+    padding: 5px;
+} */
+
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    display: none; 
+    position: absolute;
+    top: 100%;
+}
+
+.menu.showMenu {
+    display: grid; /* Display when active */
+    position: absolute;
+    right: 0;
+    background-color: orange;
+    border-radius: 15px;
+    font-weight: bold;
+    line-height: 50px;
+    width: 150px;
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+}
+
+#cartImageSizer {
+    width: 50%;
+    margin-top: 8px;
+    position: relative;
+    left: 165px;
+}
+
+/* .nav a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+    text-transform: capitalize;
+    left: 7px;
+    top: 7px;
+} */
+
+.burgerMenu {
+    cursor: pointer;
+    width: max-content;
+    padding: 22px;
+    margin-left: 4em;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: transform 0.3s ease; /* Transition added for smooth animation */
+}
+
+.line1Active {
+    transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.line2Active {
+    opacity: 0;
+}
+
+.line3Active {
+    transform: rotate(45deg) translate(-6px, -5px);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        grid-column: span 3; /* Span all three columns */
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .burgerMenu {
+        display: block; /* Display when active */
+    }
+    #cartImageSizer {
+        width: auto;
+        position: relative;
+        left: 70px;
+    }
+}
+
+.nav div a img {
+    width: 50px;
+}
+
+menu ul {
+    list-style: none;
+}
+
+.logo {
+    position: absolute;
+    height: auto; /* Or whatever size looks good on larger screens */
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .store_item img {
+    width: 80%; /* Start with larger images on bigger screens */
+    height: auto;
+    transition: all .5s ease;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) { /* Adjust breakpoint as needed */
+    .logo {
+    position: absolute;
+      width: 200px; /* Increase logo size on small screens */
+      height: auto;
+    }
+  
+    .store_item img {
+      width: 100%; /* Make product images smaller on smaller screens */
+    }
+  }
+
+  a#limitSpace {
+    width: 200px;
+  }

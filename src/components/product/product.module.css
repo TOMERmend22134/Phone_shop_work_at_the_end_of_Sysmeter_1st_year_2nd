@@ -1,0 +1,34 @@
+.product_images {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 50px; */
+    text-align: center;
+    justify-content: space-between;
+    gap: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product_images img{
+    width: 50%;
+}
+
+#koteretfix {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.product_images img {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.product_images img:hover {
+    transform: scale(1.1); /* (110% normal size) */
+}
